@@ -18,17 +18,30 @@
   }
 
   @media screen and (min-width: $sidebar-screen-min-width) {
-    height: 100vh;
-    overflow-y: auto;               // Add scrollbar if the sidebar is too long
-    position: fixed;
-    padding-top: $masthead-height;
+    /* Changed to sticky positioning for better centering */
+    position: sticky;
+    top: $masthead-height + 20px;
+    height: auto;
+    float: left;
   }
 
   @include breakpoint($large) {
-    @include span(2 of 12);
+    width: 300px;
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
+    
+    // Jelly card effect - 样式在 _custom_styles.scss 中统一控制
+    background: var(--global-bg-color);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* padding 在 _custom_styles.scss 的 .sidebar 中设置 */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 30px;
+    height: auto;
+    text-align: center;
 
     &:hover {
       opacity: 1;
@@ -36,8 +49,8 @@
   }
 
   @include breakpoint($x-large) {
-    max-width: $sidebar-link-max-width;
-    padding-right: 0;
+    max-width: 280px;
+    /* 删除这个不对称的padding-right设置 */
   }
 
   h2, h3, h4, h5, h6 {
@@ -49,11 +62,7 @@
     font-size: $type-size-5;
   }
 
-  p, li {
-    font-family: $sans-serif;
-    font-size: $type-size-6;
-    line-height: 1.5;
-  }
+  /* p, li 字体大小在 _custom_styles.scss 中设置 */
 
   img {
     width: 100%;
@@ -91,6 +100,10 @@
     display: block;
     width: auto;
     height: auto;
+    text-align: center;
+    margin: 0 auto 20px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   img {
@@ -100,6 +113,8 @@
     @include breakpoint($large) {
       padding: 5px;
       border: 1px solid var(--global-border-color);
+      margin: 0 auto;
+      display: block;
     }
   }
 }
@@ -114,8 +129,11 @@
   @include breakpoint($large) {
     display: block;
     width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: center;
   }
 }
 
@@ -129,7 +147,10 @@
 }
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-size: $type-size-3;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .sidebar .author__desktop {
@@ -174,6 +195,10 @@
 
   @include breakpoint($large) {
     display: block;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   button {
@@ -235,7 +260,7 @@
     width: 0;
     border-style: solid;
     border-width: 0 10px 10px;
-    border-color: #fff transparent;
+    border-color: var(--global-bg-color) transparent;
     z-index: 1;
 
     @include breakpoint($large) {
@@ -247,12 +272,10 @@
     white-space: nowrap;
   }
 
-  a {
+  a, span {
     display: block;
     margin-bottom: 5px;
-    padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding: 0;
     color: inherit;
     font-size: $type-size-5;
     text-decoration: none;

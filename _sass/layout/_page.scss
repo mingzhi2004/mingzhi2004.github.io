@@ -3,29 +3,35 @@
    ========================================================================== */
 
 #main {
-  @include container;
   @include clearfix;
   margin-top: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2em;
+  padding-right: 2em;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
+  max-width: 1320px; /* Set fixed max-width for centering */
+  width: 100%;
 
   @include breakpoint($x-large) {
-    max-width: $x-large;
+    max-width: 1320px;
   }
 }
 
 .page {
   @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    float: right;
+    width: calc(100% - 330px);
+    padding-left: 0;
   }
 
   .page__inner-wrap {
     @include full();
-
+    @include card-style; // Added card style
+    padding: 30px; // Increased padding for better look inside card
+    background-color: var(--global-bg-color); // Use theme-aware background color
+    
     .page__content,
     .page__meta,
     .page__share {

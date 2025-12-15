@@ -24,6 +24,7 @@ layout: default
     {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
 
     <div class="page__inner-wrap">
+      
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
@@ -75,6 +76,11 @@ layout: default
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
+
+      <hr style="border: 0; border-top: 1px solid #eee; margin: 2em 0;">
+      <div style="text-align: right; color: #999; font-size: 0.8em; font-style: italic;">
+        Last updated: {{ "now" | date: "%B %Y" }}
+      </div>
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
