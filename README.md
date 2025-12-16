@@ -1,7 +1,6 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Mingzhi Chen's Academic Website
 
-![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
+Personal academic website built with Academic Pages template.
 
 # Getting Started
 
