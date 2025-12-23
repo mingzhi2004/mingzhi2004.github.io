@@ -78,6 +78,9 @@ My research interests broadly lie in deep learning, with an emphasis on vision a
       <a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Dong_VPR-Cloak_A_First_Look_at_Privacy_Cloak_Against_Visual_Place_ICCV_2025_paper.pdf" style="display: flex; align-items: center; padding: 6px 14px; background-color: #8c8bf0; color: #ffeaa7; border-radius: 8px; text-decoration: none; font-weight: bold; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 0.9em; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
         <i class="fas fa-file-alt" style="margin-right: 6px;"></i> Paper
       </a>
+      <a href="https://github.com/mingzhi2004/VPR-Cloak" style="display: flex; align-items: center; padding: 6px 14px; background-color: #8c8bf0; color: #ffeaa7; border-radius: 8px; text-decoration: none; font-weight: bold; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 0.9em; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+        <i class="fab fa-github" style="margin-right: 6px;"></i> GitHub
+      </a>
     </div>
   </div>
 </div>
