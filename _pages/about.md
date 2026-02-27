@@ -31,7 +31,7 @@ My research interests broadly lie in deep learning, with an emphasis on vision a
       <a href="https://arxiv.org/abs/2512.10938" style="text-decoration: none; color: inherit;">Stronger Normalization-Free Transformers</a>
     </h3>
     
-    <div style="color: var(--global-link-color); font-weight: bold; margin-bottom: 5px;">arXiv</div>
+    <div style="color: var(--global-link-color); font-weight: bold; margin-bottom: 5px;">CVPR 2026</div>
     
     <div style="margin-bottom: 10px; font-style: italic;">
       <strong>Mingzhi Chen</strong>, Taiming Lu, Jiachen Zhu, Mingjie Sun, Zhuang Liu
