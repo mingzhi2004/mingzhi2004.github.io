@@ -202,7 +202,8 @@ html[data-theme="dark"] .page__inner-wrap {
   }
 
   > p:nth-of-type(2) {
-    color: var(--global-text-color-light);
+    color: var(--global-text-color);
+    opacity: 0.78;
     margin-bottom: 2.25em;
   }
 
