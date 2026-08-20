@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I’m a final-year undergraduate student at Southern University of Science and Technology (SUSTech). Currently, I am a research intern at Princeton University, supervised by Prof. <a href="https://liuzhuang13.github.io/" style="text-decoration: none;  font-weight: bold;">Zhuang Liu</a>. Prior to this, I am fortunate to be mentored by Prof. <a href="https://www.sigs.tsinghua.edu.cn/yc2_en/main.psp" style="text-decoration: none;  font-weight: bold;">Chun Yuan</a> at Tsinghua University and Prof. <a href="https://mingtang.site/" style="text-decoration: none;  font-weight: bold;">Ming Tang</a> at SUSTech.
+I am a first-year Ph.D. student in Computer Science and Engineering at the <a href="https://hkust.edu.hk/">Hong Kong University of Science and Technology (HKUST)</a>, advised by Prof. <a href="https://zjuchenlong.github.io/">Long Chen</a>.
 
-My research interests broadly lie in deep learning, with an emphasis on vision and language models. In the long term, I aim to develop deep learning systems that are more helpful, reliable, and intelligent for real-world applications. To this end, I have explored various related topics.
+My research interests lie in computer vision and multimodal learning, with a focus on building capable and reliable models for visual understanding, reasoning, and generation.
 
 <h2>
   Publications
@@ -116,4 +116,3 @@ My research interests broadly lie in deep learning, with an emphasis on vision a
     </div>
   </div>
 </div>
-

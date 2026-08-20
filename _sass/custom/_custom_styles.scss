@@ -191,6 +191,21 @@ html[data-theme="dark"] .page__inner-wrap {
 }
 
 .page__content {
+  font-size: 0.98em;
+  line-height: 1.72;
+  letter-spacing: -0.005em;
+
+  > p:first-of-type {
+    font-size: 1.06em;
+    line-height: 1.7;
+    margin-top: 0;
+  }
+
+  > p:nth-of-type(2) {
+    color: var(--global-text-color-light);
+    margin-bottom: 2.25em;
+  }
+
   > div[style*="display: flex"] {
     @media screen and (max-width: 768px) {
       display: block !important;
