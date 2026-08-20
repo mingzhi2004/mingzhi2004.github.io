@@ -20,7 +20,7 @@
     <div style="height: 3px; background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%); border-radius: 2px; margin: 15px auto; max-width: 80%; width: 100%;"></div>
     
     {% if author.email %}
-      <p style="margin: 10px 0; font-size: 13px; text-align: center; color: var(--global-text-color-light);">{{ author.email | replace: "@", " [at] " | replace: ".", " [dot] " }}</p>
+      <p class="author__email">{{ author.email | replace: "@", " [at] " | replace: ".", " [dot] " }}</p>
     {% endif %}
   </div>
 

@@ -8,7 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I am a first-year Ph.D. student in Computer Science and Engineering at the <a href="https://hkust.edu.hk/">Hong Kong University of Science and Technology (HKUST)</a>, advised by Prof. <a href="https://zjuchenlong.github.io/">Long Chen</a>.
+I am a first-year Ph.D. student in Computer Science and Engineering at <span class="institution">HKUST</span>, advised by Prof. <a class="mentor-link" href="https://zjuchenlong.github.io/">Long Chen</a>.
+
+Before beginning my Ph.D., I had the opportunity to collaborate with Prof. <a class="mentor-link" href="https://liuzhuang13.github.io/">Zhuang Liu</a> at <span class="institution">Princeton University</span>, Prof. <a class="mentor-link" href="https://www.sigs.tsinghua.edu.cn/yc2_en/main.psp">Chun Yuan</a> at <span class="institution">Tsinghua University</span>, and Prof. <a class="mentor-link" href="https://mingtang.site/">Ming Tang</a> at <span class="institution">SUSTech</span>.
 
 My research interests lie in computer vision and multimodal learning, with a focus on building capable and reliable models for visual understanding, reasoning, and generation.
 
