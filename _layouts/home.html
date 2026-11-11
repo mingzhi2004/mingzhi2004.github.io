@@ -4,19 +4,23 @@ layout: default
 {% assign author = site.author %}
 <main id="main-content" class="site-shell home">
   <section class="home-hero" aria-labelledby="home-title">
-    <p class="home-hero__role"><span aria-hidden="true"></span> Ph.D. student at HKUST</p>
-    <h1 id="home-title">{{ site.name | escape }}</h1>
-    <p class="home-hero__research">
-      <span>Current research interests</span>
-      <strong>Diffusion LMs and MLLMs</strong>
-    </p>
-    <nav class="home-links" aria-label="Research and contact">
-      <a href="#publications">Publications <span aria-hidden="true">↓</span></a>
-      {% if author.googlescholar %}<a href="{{ author.googlescholar }}">Google Scholar</a>{% endif %}
-      {% if author.github %}<a href="https://github.com/{{ author.github }}">GitHub</a>{% endif %}
-      {% if author.email %}<a href="mailto:{{ author.email }}">Email</a>{% endif %}
-      {% if author.twitter %}<a href="https://x.com/{{ author.twitter }}">X</a>{% endif %}
-    </nav>
+    <div>
+      <p class="home-hero__role"><span aria-hidden="true"></span> Ph.D. student at HKUST</p>
+      <h1 id="home-title">{{ site.name | escape }}</h1>
+    </div>
+    <div>
+      <p class="home-hero__research">
+        <span>Current research interests</span>
+        <strong>Diffusion LMs and MLLMs</strong>
+      </p>
+      <nav class="home-links" aria-label="Research and contact">
+        <a href="#publications">Publications <span aria-hidden="true">↓</span></a>
+        {% if author.googlescholar %}<a href="{{ author.googlescholar }}">Google Scholar</a>{% endif %}
+        {% if author.github %}<a href="https://github.com/{{ author.github }}">GitHub</a>{% endif %}
+        {% if author.email %}<a href="mailto:{{ author.email }}">Email</a>{% endif %}
+        {% if author.twitter %}<a href="https://x.com/{{ author.twitter }}">X</a>{% endif %}
+      </nav>
+    </div>
   </section>
 
   <section class="home-about" aria-labelledby="about-title">
@@ -25,9 +29,5 @@ layout: default
   </section>
 
   {% include publication-list.html %}
-
-  <div class="home-stickers" aria-hidden="true">
-    <img src="{{ '/images/yier-bubu-tea.webp' | relative_url }}" width="240" height="312" loading="lazy" alt="">
-    <img src="{{ '/images/bubu-hop.webp' | relative_url }}" width="216" height="242" loading="lazy" alt="">
-  </div>
 </main>
+<img class="home-mascot" src="{{ '/images/yier-bubu-tea.webp' | relative_url }}" width="240" height="312" alt="">

@@ -131,9 +131,14 @@ body {
 }
 
 .home {
-  position: relative;
   max-width: 61rem;
   padding-block: clamp(2rem, 5vw, 4.25rem);
+}
+
+.home-hero {
+  display: grid;
+  align-items: center;
+  gap: 1.2rem;
 }
 
 .home-hero__role {
@@ -166,7 +171,7 @@ body {
 }
 
 .home-hero h1 {
-  margin: 0 0 0.85rem;
+  margin: 0;
   font-size: clamp(3rem, 6vw, 4.65rem);
 }
 
@@ -214,6 +219,31 @@ body {
   background: var(--home-button-hover);
 }
 
+@media (min-width: 1024px) {
+  .home-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    column-gap: clamp(1.75rem, 4vw, 3.4rem);
+  }
+
+  .home-hero__research {
+    display: grid;
+  }
+
+  .home-hero__research strong {
+    font-size: 1.24rem;
+  }
+
+  .home-links {
+    gap: 0.45rem;
+    margin-top: 0.85rem;
+  }
+
+  .home-links a {
+    padding-inline: 0.7rem;
+    font-size: 0.82rem;
+  }
+}
+
 .publication__links a {
   display: inline-flex;
   align-items: center;
@@ -231,30 +261,22 @@ body {
   background: var(--site-tint);
 }
 
-.home-stickers {
-  display: none;
+.home-mascot {
+  position: fixed;
+  right: calc(0.6rem + env(safe-area-inset-right, 0px));
+  bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+  z-index: 2;
+  display: block;
+  width: 2.55rem;
+  height: auto;
+  pointer-events: none;
 }
 
 @media (min-width: 1320px) {
-  .home-stickers {
-    position: absolute;
-    top: 6rem;
-    left: calc(100% + 1.6rem);
-    display: grid;
-    justify-items: center;
-    gap: 8rem;
-    width: 4.1rem;
-    pointer-events: none;
-  }
-
-  .home-stickers img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  .home-stickers img + img {
-    width: 77%;
+  .home-mascot {
+    right: calc(1rem + env(safe-area-inset-right, 0px));
+    bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+    width: clamp(4.5rem, 7vw, 6rem);
   }
 }
 
