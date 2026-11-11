@@ -28,10 +28,12 @@
 
   .page__inner-wrap {
     @include full();
-    @include card-style; // Added card style
-    padding: 30px; // Increased padding for better look inside card
-    background-color: var(--global-bg-color); // Use theme-aware background color
-    
+    margin-bottom: 20px;
+    padding: clamp(1rem, 3vw, 30px);
+    border: 1px solid var(--global-border-color);
+    border-radius: 1.25rem;
+    background: var(--site-paper);
+
     .page__content,
     .page__meta,
     .page__share {

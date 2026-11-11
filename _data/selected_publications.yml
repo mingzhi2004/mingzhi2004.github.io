@@ -1,0 +1,32 @@
+- title: Stronger Normalization-Free Transformers
+  venue: CVPR 2026
+  authors: '<strong>Mingzhi Chen</strong>, Taiming Lu, Jiachen Zhu, Mingjie Sun, Zhuang Liu'
+  image: /images/Derf.png
+  image_alt: Comparison of normalization-free Transformer performance
+  links:
+    - label: Paper
+      url: https://arxiv.org/abs/2512.10938
+    - label: GitHub
+      url: https://github.com/zlab-princeton/derf
+    - label: Twitter
+      url: https://x.com/liuzhuang1234/status/1999321116641497355
+
+- title: A First Look at Privacy Cloak Against Visual Place Recognition
+  venue: ICCV 2025
+  authors: 'Shuting Dong*, <strong>Mingzhi Chen*</strong>, Feng Lu, Hao Yu, Guanghao Li, Ming Tang†, Chun Yuan†'
+  image: /images/VPR-Cloak.png
+  image_alt: Visual place recognition with and without a privacy cloak
+  links:
+    - label: Paper
+      url: https://openaccess.thecvf.com/content/ICCV2025/papers/Dong_VPR-Cloak_A_First_Look_at_Privacy_Cloak_Against_Visual_Place_ICCV_2025_paper.pdf
+    - label: GitHub
+      url: https://github.com/mingzhi2004/VPR-Cloak
+
+- title: "MIGA: Mutual Information-Guided Attack on Denoising Models for Semantic Manipulation"
+  venue: arXiv
+  authors: 'Guanghao Li*, <strong>Mingzhi Chen*</strong>, Hao Yu, Shuting Dong, Wenhao Jiang, Ming Tang†, Chun Yuan†'
+  image: /images/MIGA.png
+  image_alt: Diagram of the MIGA method for semantic manipulation
+  links:
+    - label: Paper
+      url: https://arxiv.org/abs/2503.06966
