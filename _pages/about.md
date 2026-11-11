@@ -2,7 +2,7 @@
 permalink: /
 layout: home
 title: "Mingzhi Chen"
-excerpt: "Ph.D. student at HKUST researching computer vision and multimodal learning."
+excerpt: "Ph.D. student at HKUST interested in Diffusion LMs and MLLMs."
 author_profile: false
 redirect_from:
   - /about/

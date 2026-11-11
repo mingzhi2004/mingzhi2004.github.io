@@ -7,18 +7,19 @@ layout: default
     <div class="home-hero__copy">
       <p class="home-hero__role"><span aria-hidden="true"></span> Ph.D. student at HKUST</p>
       <h1 id="home-title">{{ site.name | escape }}</h1>
-      <p class="home-hero__intro">I study computer vision and multimodal learning, building models for visual understanding, reasoning, and generation.</p>
-      <div class="home-links" aria-label="Academic profiles and contact">
-        <a class="home-links__primary" href="#publications">Publications <span aria-hidden="true">↓</span></a>
-        {% if author.googlescholar %}<a href="{{ author.googlescholar }}">Google Scholar</a>{% endif %}
-        {% if author.github %}<a href="https://github.com/{{ author.github }}">GitHub</a>{% endif %}
-        {% if author.email %}<a href="mailto:{{ author.email }}">Email</a>{% endif %}
-        {% if author.twitter %}<a href="https://x.com/{{ author.twitter }}">X</a>{% endif %}
-      </div>
+      <p class="home-hero__research">
+        <span>Current research interests</span>
+        <strong>Diffusion LMs and MLLMs</strong>
+      </p>
     </div>
-    <figure class="home-hero__art">
-      <img src="{{ '/images/yier-bubu.webp' | relative_url }}" width="506" height="658" alt="Yier sips bubble tea while sitting on Bubu, who is playing on a phone." fetchpriority="high">
-    </figure>
+    <img class="home-hero__art" src="{{ '/images/yier-bubu.webp' | relative_url }}" width="506" height="658" alt="">
+    <nav class="home-links" aria-label="Research and contact">
+      <a href="#publications">Publications <span aria-hidden="true">↓</span></a>
+      {% if author.googlescholar %}<a href="{{ author.googlescholar }}">Google Scholar</a>{% endif %}
+      {% if author.github %}<a href="https://github.com/{{ author.github }}">GitHub</a>{% endif %}
+      {% if author.email %}<a href="mailto:{{ author.email }}">Email</a>{% endif %}
+      {% if author.twitter %}<a href="https://x.com/{{ author.twitter }}">X</a>{% endif %}
+    </nav>
   </section>
 
   <section class="home-about" aria-labelledby="about-title">
@@ -28,7 +29,3 @@ layout: default
 
   {% include publication-list.html %}
 </main>
-<footer class="site-shell home-footer">
-  <span>{{ site.name | escape }}</span>
-  <span>Yier &amp; Bubu characters by <a href="https://weibo.com/u/2623471650" lang="zh">黄小B</a></span>
-</footer>

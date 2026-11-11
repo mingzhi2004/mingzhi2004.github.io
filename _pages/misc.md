@@ -16,7 +16,7 @@ author_profile: false
     </section>
     <section>
       <h2>Esports</h2>
-      <p>I was a <strong>professional esports player</strong> for about half a year.</p>
+      <p>I was a <strong>professional esports player</strong> for about half a year. I enjoy playing <strong>Hearthstone Battlegrounds</strong> and <strong lang="zh-Hans">万象棋</strong>.</p>
     </section>
     <section>
       <h2>Music</h2>
